@@ -19,3 +19,6 @@
 
   line-height: 1.4em;
 }
+#posts-list.has-comments li.no-comments {
+  display: none;
+}
