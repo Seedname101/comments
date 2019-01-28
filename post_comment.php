@@ -2,7 +2,9 @@
 require('Persistence.php');
 
 $db = new Persistence();
-if( $db->add_comment($_POST) ) {
+$added = $db->add_comment($_POST);
+
+if($added) {
   header( 'Location: index.php' );
 }
 else {
